@@ -1,0 +1,24 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_3_0.dtd" >
+<!-- web.xml中的设置会覆盖Servlet中的标注设置. 可以使用标注来作默认值, 而web.xml来作日后更改设置值所用 -->
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>HelloServlet</servlet-name>
+		<servlet-class>com.jsp_servlet.example.resource.HelloServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HelloServlet</servlet-name>
+		<url-pattern>/helloUser.view</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>PathServlet</servlet-name>
+		<servlet-class>com.jsp_servlet.example.resource.PathServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PathServlet</servlet-name>
+		<url-pattern>/PathServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
