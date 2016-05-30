@@ -19,10 +19,12 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/hello.view")
 public class HelloServlet extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * 重新定义doGet
+	 * 
 	 * @param request
 	 * @param response
 	 * @throws ServletException
@@ -30,7 +32,7 @@ public class HelloServlet extends HttpServlet {
 	 */
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// 设置响应内容类型器
+		// 设置响应内容类型器. 代表对客户端响应的响应类型和编码方式
 		response.setContentType("text/html;charset=UTF-8");
 
 		// 取得响应输出对象
