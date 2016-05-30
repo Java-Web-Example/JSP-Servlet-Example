@@ -19,6 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/header.view")
 public class HeaderServlet extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -39,8 +40,10 @@ public class HeaderServlet extends HttpServlet {
 		out.println("<title>Header Servlet</title>");
 		out.println("</head>");
 		out.println("<body>");
+
 		// 取得应用环境路径
 		out.println("<h1> HeaderSevlet at " + request.getContextPath() + " !</h1>");
+
 		// 取得所有标头名称
 		Enumeration<String> names = request.getHeaderNames();
 		while (names.hasMoreElements()) {
@@ -48,6 +51,7 @@ public class HeaderServlet extends HttpServlet {
 			// 取得标头值
 			out.println(name + ": " + request.getHeader(name) + "<br>");
 		}
+
 		out.println("</body>");
 		out.println("</html>");
 	}
