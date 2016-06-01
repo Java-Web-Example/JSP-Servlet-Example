@@ -11,7 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * 使用getReader()读取请求的Body内容
+ * 使用getReader()读取请求的Body内容.
+ * HttpServletRequest.getReader()方法可以取得一个BufferedReader对象, 通过该对象, 可以读取请求的body数据.
  *
  * @author	Lian
  * @time	2016年4月25日
@@ -19,6 +20,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/body.view")
 public class BodyServlet extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -31,6 +33,7 @@ public class BodyServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String body = readBody(request);
+//		response.setContentType("text/html; charset=UTF-8");
 		// 取得响应输出对象
 		PrintWriter out = response.getWriter();
 

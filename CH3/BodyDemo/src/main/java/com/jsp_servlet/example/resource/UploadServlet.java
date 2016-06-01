@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * 使用getInputStream()来处理上传的文件
+ * TODO		当使用UTF8编码格式来处理时, 报错...
  *
  * @author	Lian
  * @time	2016年4月25日
@@ -21,7 +22,10 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/upload.do")
 public class UploadServlet extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
+	private static final String ISO_8859 = "ISO-8859-1";
+	private static final String UTF8 = "UTF-8";
 
 	/**
 	 * 重写doPost方法来处理上传的文件
@@ -36,7 +40,7 @@ public class UploadServlet extends HttpServlet {
 		byte[] body = readBody(request);
 
 		// 取得所有Body内容的字符串表示
-		String textBody = new String(body, "ISO-8859-1");
+		String textBody = new String(body, UTF8);
 
 		// 取得上传的文件名称
 		String filename = getFileName(textBody);
@@ -48,7 +52,7 @@ public class UploadServlet extends HttpServlet {
 		writeTo(filename, body, p);
 
 		// 文件保存成功, 返回响应信息
-		response.setCharacterEncoding("UTF-8");
+		response.setCharacterEncoding(UTF8);
 		PrintWriter out = response.getWriter();
 		out.println("文件保存成功");
 		out.close();
@@ -103,8 +107,8 @@ public class UploadServlet extends HttpServlet {
 		pos = textBody.indexOf("\n", pos) + 1;
 		pos = textBody.indexOf("\n", pos) + 1;
 		int boundaryLoc = textBody.indexOf(boundaryText, pos) - 4;
-		int begin = ((textBody.substring(0, pos)).getBytes("ISO-8859-1")).length;
-		int end = ((textBody.substring(0, boundaryLoc)).getBytes("ISO-8859-1")).length;
+		int begin = ((textBody.substring(0, pos)).getBytes(UTF8)).length;
+		int end = ((textBody.substring(0, boundaryLoc)).getBytes(UTF8)).length;
 
 		return new Position(begin, end);
 	}
