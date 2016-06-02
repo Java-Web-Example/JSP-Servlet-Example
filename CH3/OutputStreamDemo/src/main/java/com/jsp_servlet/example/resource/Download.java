@@ -17,10 +17,12 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/download.do")
 public class Download extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * 重写doPost方法
+	 *
 	 * @param request
 	 * @param response
 	 * @throws ServletException
