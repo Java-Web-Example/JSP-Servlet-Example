@@ -16,10 +16,12 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/pet")
 public class Pet extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * 重写doPost方法
+	 *
 	 * @param request
 	 * @param response
 	 * @throws ServletException
@@ -45,6 +47,7 @@ public class Pet extends HttpServlet {
 		out.println("联系人: <a href='mailto: " + request.getParameter("email") + "'>" + request.getParameter("user") + "</a>");
 		out.println("<br>喜爱的宠物类型");
 		out.println("<ul>");
+
 		// 取得复选项请求参数值
 		for (String type : request.getParameterValues("type")) {
 			out.println("<li>" + type + "</li>");

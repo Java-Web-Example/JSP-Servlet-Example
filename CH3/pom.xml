@@ -35,7 +35,7 @@
 		<module>PartDemo</module>
 		<module>DispatcherDemo</module>
 		<module>SimpleModel2</module>
-		<module>CharacterDeom</module>
+		<module>CharacterDemo</module>
 		<module>OutputStreamDemo</module>
 		<module>Gossip</module>
 	</modules>
