@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/hello.view")
 public class HelloView extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 
 	private String htmlTemplate = 
@@ -30,6 +31,7 @@ public class HelloView extends HttpServlet {
 
 	/**
 	 * 重写doGet方法进行相应
+	 * 
 	 * @param request
 	 * @param response
 	 * @throws ServletException

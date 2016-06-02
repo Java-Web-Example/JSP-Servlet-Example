@@ -17,11 +17,13 @@ import com.jsp_servlet.example.resource.model.HelloModel;
  */
 @WebServlet("/hello.do")
 public class HelloController extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 	private HelloModel model = new HelloModel();
 
 	/**
 	 * 重写doGet方法
+	 * 
 	 * @param request
 	 * @param response
 	 * @throws ServletException
