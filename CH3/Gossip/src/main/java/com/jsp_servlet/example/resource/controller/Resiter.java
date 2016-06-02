@@ -20,13 +20,16 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/register.do")
 public class Resiter extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 
-	private final String USERS = "C:/Github/JSP-Servlet-Example/CH3/Gossip/src/main/resources/users";
+	private final String USERS = "C:/Github/Java-Web-Example/JSP-Servlet-Example/CH3/Gossip/src/main/resources/users";
 	private final String SUCCESS_VIEW = "success.view";
 	private final String ERROR_VIEW = "error.view";
+
 	/**
 	 * 重写doPost方法
+	 * 
 	 * @param request
 	 * @param response
 	 * @throws ServletException
@@ -67,6 +70,7 @@ public class Resiter extends HttpServlet {
 
 	/**
 	 * 验证邮箱的有效性
+	 * 
 	 * @param email
 	 * @return
 	 */
@@ -76,6 +80,7 @@ public class Resiter extends HttpServlet {
 
 	/**
 	 * 检查用户资料夹是否创建来确认用户是否已注册
+	 * 
 	 * @param username
 	 * @return
 	 */
@@ -90,6 +95,7 @@ public class Resiter extends HttpServlet {
 
 	/**
 	 * 验证密码的有效性
+	 * 
 	 * @param password
 	 * @param confirmedPasswd
 	 * @return
@@ -103,6 +109,7 @@ public class Resiter extends HttpServlet {
 
 	/**
 	 * 创建用户资料时, 在profile中存储邮件和密码
+	 * 
 	 * @param email
 	 * @param username
 	 * @param password

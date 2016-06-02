@@ -18,13 +18,16 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/login.do")
 public class Login extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 
-	private final String USERS = "C:/Github/JSP-Servlet-Example/CH3/Gossip/src/main/resources/users";
+	private final String USERS = "C:/Github/Java-Web-Example/JSP-Servlet-Example/CH3/Gossip/src/main/resources/users";
 	private final String SUCCESS_VIEW = "member.view";
 	private final String ERROR_VIEW = "index.html";
+
 	/**
 	 * 重写doPost方法
+	 * 
 	 * @param request
 	 * @param response
 	 * @throws ServletException
@@ -47,11 +50,13 @@ public class Login extends HttpServlet {
 
 	/**
 	 * 验证用户名和密码是否正确
+	 * 
 	 * @param username
 	 * @param password
 	 * @return
 	 * @throws IOException
 	 */
+	@SuppressWarnings("resource")
 	private boolean checkLogin(String username, String password) throws IOException {
 		if(username != null && password != null) {
 			for(String file : new File(USERS).list()) {
@@ -64,7 +69,7 @@ public class Login extends HttpServlet {
 				}
 			}
 		}
-		
+
 		return false;
 	}
 }
