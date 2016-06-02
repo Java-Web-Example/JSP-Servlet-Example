@@ -20,10 +20,12 @@ import javax.servlet.http.Part;
 @MultipartConfig(location="c:/Github")
 @WebServlet("/upload3.do")
 public class UploadServlet3 extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * 重写doPost方法取得上传文件
+	 * 
 	 * @param request
 	 * @param response
 	 * @throws ServletException
@@ -44,6 +46,7 @@ public class UploadServlet3 extends HttpServlet {
 
 	/**
 	 * 取得上传文件名
+	 * 
 	 * @param part
 	 * @return
 	 */

@@ -17,13 +17,15 @@ import javax.servlet.http.Part;
  * 			Tomcat中必须设置@MultipartConfig标注才能使用getPart()相关API
  * 			配置@MultipartConfig属性值, 并使用Part.write()方法储存文件
  */
-@MultipartConfig(location="c:/Github")
+@MultipartConfig(location = "c:/Github")
 @WebServlet("/upload2.do")
 public class UploadServlet2 extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * 重写doPost方法取得上传文件
+	 * 
 	 * @param request
 	 * @param response
 	 * @throws ServletException
@@ -45,6 +47,7 @@ public class UploadServlet2 extends HttpServlet {
 
 	/**
 	 * 取得上传文件名
+	 * 
 	 * @param part
 	 * @return
 	 */

@@ -26,6 +26,7 @@ public class UploadServlet extends HttpServlet {
 
 	/**
 	 * 重写doPost方法取得上传文件
+	 * 
 	 * @param request
 	 * @param response
 	 * @throws ServletException
@@ -40,17 +41,20 @@ public class UploadServlet extends HttpServlet {
 
 	/**
 	 * 取得上传文件名
+	 * 
 	 * @param part
 	 * @return
 	 */
 	private String getFilename(Part part) {
 		String header = part.getHeader("Content-Disposition");
 		String filename = header.substring(header.indexOf("filename=\"") + 10, header.lastIndexOf("\""));
+
 		return filename;
 	}
 
 	/**
 	 * 储存文件
+	 * 
 	 * @param filename
 	 * @param part
 	 * @throws IOException 
