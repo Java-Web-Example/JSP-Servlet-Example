@@ -22,6 +22,7 @@ import javax.servlet.http.HttpServletResponse;
 		@WebInitParam(name="ERROR", value="error.view")
 	})
 public class Login extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 
 	private String SUCCESS_VIEW;
@@ -29,6 +30,7 @@ public class Login extends HttpServlet {
 
 	/**
 	 * 取得初始化参数
+	 * 
 	 * @throws ServletException
 	 */
 	@Override
@@ -39,6 +41,7 @@ public class Login extends HttpServlet {
 
 	/**
 	 * 重写doPost方法
+	 * 
 	 * @param request
 	 * @param response
 	 * @throws ServletException

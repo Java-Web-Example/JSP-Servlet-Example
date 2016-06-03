@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/error.view")
 public class Error extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 
 	/**
