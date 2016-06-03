@@ -29,6 +29,7 @@ public class EncodingFilter implements Filter {
 
 	/**
 	 * init初始化方法
+	 * 
 	 * @param fConfig
 	 * @throws ServletException
 	 */
@@ -38,6 +39,7 @@ public class EncodingFilter implements Filter {
 
 	/**
 	 * 过滤器的真正执行方法
+	 * 
 	 * @param request
 	 * @param response
 	 * @param chain
