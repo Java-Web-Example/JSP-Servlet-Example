@@ -27,9 +27,10 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/member.view")
 public class Member extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
-	
-	private final String USERS = "C:/GitHub/JSP-Servlet-Example/CH4/Gossip/users";
+
+	private final String USERS = "C:/GitHub/Java-Web-Example/JSP-Servlet-Example/CH4/Gossip/users";
 	private final String LOGIN_VIEW = "index.html";
 
 	/**

@@ -18,14 +18,16 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/login.do")
 public class Login extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 
-	private final String USERS = "C:/GitHub/JSP-Servlet-Example/CH4/Gossip/users";
+	private final String USERS = "C:/GitHub/Java-Web-Example/JSP-Servlet-Example/CH4/Gossip/users";
 	private final String SUCCESS_VIEW = "member.view";
 	private final String ERROR_VIEW = "index.html";
 
 	/**
 	 * 重写doPost方法
+	 * 
 	 * @param request
 	 * @param response
 	 * @throws ServletException
@@ -46,6 +48,7 @@ public class Login extends HttpServlet {
 
 	/**
 	 * 检查用户是否已经登录过
+	 * 
 	 * @param username
 	 * @param password
 	 * @return

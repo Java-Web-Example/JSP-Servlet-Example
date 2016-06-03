@@ -15,12 +15,14 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/logout.do")
 public class Logout extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 
 	private final String LOGIN_VIEW = "index.html";
 
 	/**
 	 * 重写doGet方法
+	 * 
 	 * @param request
 	 * @param response
 	 * @throws ServletException

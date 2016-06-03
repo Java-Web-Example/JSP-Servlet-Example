@@ -20,14 +20,16 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/register.do")
 public class Register extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 
-	private final String USERS = "C:/GitHub/JSP-Servlet-Example/CH4/Gossip/users";
+	private final String USERS = "C:/GitHub/Java-Web-Example/JSP-Servlet-Example/CH4/Gossip/users";
 	private final String SUCCESS_VIEW = "success.view";
 	private final String ERROR_VIEW = "error.view";
 
 	/**
 	 * 重写doPost方法
+	 * 
 	 * @param request
 	 * @param response
 	 * @throws ServletException

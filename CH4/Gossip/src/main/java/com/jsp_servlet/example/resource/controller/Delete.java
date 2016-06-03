@@ -16,14 +16,16 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/delete.do")
 public class Delete extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 
-	private final String USERS = "C:/GitHub/JSP-Servlet-Example/CH4/Gossip/users";
+	private final String USERS = "C:/GitHub/Java-Web-Example/JSP-Servlet-Example/CH4/Gossip/users";
 	private final String LOGIN_VIEW = "index.html";
 	private final String SUCCESS_VIEW = "member.view";
 
 	/**
 	 * 重写doGet方法
+	 * 
 	 * @param request
 	 * @param response
 	 * @throws ServletException
