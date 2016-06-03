@@ -17,10 +17,12 @@ import javax.servlet.http.HttpSession;
  */
 @WebServlet("/questionnaire")
 public class Questionnaire extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * 重写doGet方法
+	 * 
 	 * @param request
 	 * @param response
 	 * @throws ServletException
@@ -33,6 +35,7 @@ public class Questionnaire extends HttpServlet {
 
 	/**
 	 * 重写doPost方法
+	 * 
 	 * @param request
 	 * @param response
 	 * @throws ServletException
@@ -45,6 +48,7 @@ public class Questionnaire extends HttpServlet {
 
 	/**
 	 * 真正处理逻辑的方法
+	 * 
 	 * @param request
 	 * @param response
 	 * @throws IOException 
