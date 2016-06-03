@@ -7,6 +7,6 @@
 
 	<context-param>
 		<param-name>USERS</param-name>
-		<param-value>C:/Github/JSP-Servlet-Example/CH5/Gossip/users</param-value>
+		<param-value>C:/Github/Java-Web-Example/JSP-Servlet-Example/CH5/Gossip/users</param-value>
 	</context-param>
 </web-app>

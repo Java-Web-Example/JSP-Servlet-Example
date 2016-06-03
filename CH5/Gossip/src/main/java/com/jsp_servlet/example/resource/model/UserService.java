@@ -22,6 +22,7 @@ import java.util.TreeMap;
  * @desc	
  */
 public class UserService {
+
 	private String USERS;
 
 	public UserService(String USERS) {
@@ -31,6 +32,7 @@ public class UserService {
 
 	/**
 	 * 校验是否为不合法用户昵称
+	 * 
 	 * @param username
 	 * @return
 	 */
@@ -45,6 +47,7 @@ public class UserService {
 
 	/**
 	 * 创建用户目录与基本资料
+	 * 
 	 * @param email
 	 * @param username
 	 * @param passwd
@@ -60,11 +63,13 @@ public class UserService {
 
 	/**
 	 * 检查登录用户名称与密码
+	 * 
 	 * @param username
 	 * @param passwd
 	 * @return
 	 * @throws IOException 
 	 */
+	@SuppressWarnings("resource")
 	public boolean checkLogin(String username, String password) throws IOException {
 		if(username != null && password != null) {
 			for(String file : new File(USERS).list()) {
@@ -110,6 +115,7 @@ public class UserService {
 
 	/**
 	 * 读取用户信息
+	 * 
 	 * @param username
 	 * @return
 	 * @throws IOException 
@@ -138,6 +144,7 @@ public class UserService {
 
 	/**
 	 * 新增信息
+	 * 
 	 * @param username
 	 * @param blabla
 	 * @throws IOException
@@ -152,6 +159,7 @@ public class UserService {
 
 	/**
 	 * 删除信息
+	 * 
 	 * @param username
 	 * @param message
 	 */

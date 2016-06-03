@@ -22,6 +22,7 @@ import com.jsp_servlet.example.resource.model.UserService;
  */
 @WebServlet("/member.view")
 public class Member extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 
 	protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -1,4 +1,4 @@
-package com.jsp_servlet.example.resource.web;
+package com.jsp_servlet.example.resource.web.listener;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
@@ -17,6 +17,7 @@ public class GossipListener implements ServletContextListener {
 
 	/**
 	 * 将UserService设置成为一个全局属性
+	 * 
 	 * @param sce
 	 */
 	public void contextInitialized(ServletContextEvent sce) {

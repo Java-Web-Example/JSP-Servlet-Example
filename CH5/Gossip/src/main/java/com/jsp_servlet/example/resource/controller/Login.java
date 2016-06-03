@@ -24,6 +24,7 @@ import com.jsp_servlet.example.resource.model.UserService;
 }
 )
 public class Login extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 
 	private String SUCCESS_VIEW;

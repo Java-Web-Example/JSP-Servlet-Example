@@ -25,6 +25,7 @@ import com.jsp_servlet.example.resource.model.UserService;
 			@WebInitParam(name = "ERROR_VIEW", value = "error.view")
 		})
 public class Register extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 
 	private String SUCCESS_VIEW;

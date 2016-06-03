@@ -1,4 +1,4 @@
-package com.jsp_servlet.example.resource.web;
+package com.jsp_servlet.example.resource.web.filter;
 
 import java.io.IOException;
 
@@ -27,6 +27,7 @@ public class MemberFilter implements Filter {
 
 	/**
 	 * 过滤器初始化
+	 * 
 	 * @param fConfig
 	 * @throws ServletException
 	 */
@@ -36,6 +37,8 @@ public class MemberFilter implements Filter {
 	}
 
 	/**
+	 * doFilter
+	 * 
 	 * @param arg0
 	 * @param arg1
 	 * @param arg2
