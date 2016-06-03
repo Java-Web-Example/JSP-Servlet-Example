@@ -20,6 +20,7 @@ public class OnlineUserCounter implements HttpSessionListener {
 
 	/**
 	 * 当Session被创建时, 计数器++
+	 * 
 	 * @param se
 	 */
 	public void sessionCreated(HttpSessionEvent se) {
@@ -29,6 +30,7 @@ public class OnlineUserCounter implements HttpSessionListener {
 
 	/**
 	 * 当Session被销毁时, 计数器--
+	 * 
 	 * @param se
 	 */
 	public void sessionDestroyed(HttpSessionEvent se) {

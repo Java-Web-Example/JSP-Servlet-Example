@@ -19,9 +19,10 @@ import javax.servlet.annotation.WebFilter;
 public class PerformanceFilter implements Filter{
 
 	private FilterConfig config;
-	
+
 	/**
 	 * 初始化工作
+	 * 
 	 * @param config
 	 * @throws ServletException
 	 */
@@ -31,6 +32,7 @@ public class PerformanceFilter implements Filter{
 
 	/**
 	 * 过滤器中实际执行的操作
+	 * 
 	 * @param request
 	 * @param response
 	 * @param chain

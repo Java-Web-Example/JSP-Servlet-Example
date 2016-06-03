@@ -19,10 +19,12 @@ import com.jsp_servlet.example.resource.listener.OnlineUserCounter;
  */
 @WebServlet("/welcome.view")
 public class Welcom extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * 重写doGet方法
+	 * 
 	 * @param request
 	 * @param response
 	 * @throws ServletException

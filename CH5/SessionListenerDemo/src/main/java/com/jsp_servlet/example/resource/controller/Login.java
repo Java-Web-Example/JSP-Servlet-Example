@@ -17,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/login.do")
 public class Login extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 
 	private Map<String, String> users;
@@ -30,6 +31,7 @@ public class Login extends HttpServlet {
 
 	/**
 	 * 重写doPost方法
+	 * 
 	 * @param request
 	 * @param response
 	 * @throws ServletException

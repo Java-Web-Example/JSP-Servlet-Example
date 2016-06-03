@@ -14,6 +14,7 @@ public class EscapeWrapper extends HttpServletRequestWrapper {
 
 	/**
 	 * 必须调用父类构造器, 传入HttpServletRequest实例
+	 * 
 	 * @param request
 	 */
 	public EscapeWrapper(HttpServletRequest request) {
@@ -22,6 +23,7 @@ public class EscapeWrapper extends HttpServletRequestWrapper {
 
 	/**
 	 * 重新定义getParameter()方法
+	 * 
 	 * @param name
 	 * @return
 	 */

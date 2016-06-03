@@ -23,6 +23,7 @@ public class EscapeFilter implements Filter {
 
 	/**
 	 * init初始化方法
+	 * 
 	 * @param fConfig
 	 * @throws ServletException
 	 */
@@ -31,6 +32,7 @@ public class EscapeFilter implements Filter {
 
 	/**
 	 * 过滤器的真正执行方法
+	 * 
 	 * @param request
 	 * @param response
 	 * @param chain
@@ -42,8 +44,6 @@ public class EscapeFilter implements Filter {
 		chain.doFilter(requestWrapper, response);
 	}
 
-
-	
 	public void destroy() {
 	}
 

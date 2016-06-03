@@ -28,6 +28,7 @@ public class CompressionFilter implements Filter{
 
 	/**
 	 * 过滤器执行的真正方法
+	 * 
 	 * @param request
 	 * @param response
 	 * @param chain

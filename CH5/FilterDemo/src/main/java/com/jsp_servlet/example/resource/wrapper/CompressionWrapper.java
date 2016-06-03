@@ -14,7 +14,8 @@ import com.jsp_servlet.example.resource.util.GZipServletOutputStream;
 /**
  * @author	Lian
  * @time	2016年1月10日 下午4:49:26
- * @desc	压缩封装器. MD--暂时没看懂, 后面接着看
+ * @desc	压缩封装器.
+ * TODO MD--暂时没看懂, 后面接着看
  */
 public class CompressionWrapper extends HttpServletResponseWrapper {
 

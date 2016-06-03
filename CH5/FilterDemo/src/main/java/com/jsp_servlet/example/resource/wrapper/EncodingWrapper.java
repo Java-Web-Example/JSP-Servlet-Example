@@ -16,6 +16,7 @@ public class EncodingWrapper extends HttpServletRequestWrapper {
 
 	/**
 	 * 必须调用父类构造器, 传入HttpServletRequest实例
+	 * 
 	 * @param request
 	 */
 	public EncodingWrapper(HttpServletRequest request, String ENCODING) {
