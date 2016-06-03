@@ -35,7 +35,7 @@ public class Avatar extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html;charset=UTF-8");
-		PrintWriter out = response.getWriter();
+		PrintWriter out = response.getWriter(); 
 
 		out.println("<html>");
 		out.println("<head>");
@@ -54,13 +54,6 @@ public class Avatar extends HttpServlet {
 		out.println("</html>");
 
 		out.close();
-	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 	}
 
 }

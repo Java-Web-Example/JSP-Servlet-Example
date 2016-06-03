@@ -23,9 +23,13 @@ public class ContextParameterReader implements ServletContextListener {
 
 	/**
 	 * Servlet Initialized
+	 * 
 	 * @param sce
 	 */
 	public void contextInitialized(ServletContextEvent sce) {
+
+		System.out.println("*********Begin ServletContext Initialize**************");
+
 		// 取得ServletContext
 		ServletContext context = sce.getServletContext();
 
@@ -34,6 +38,8 @@ public class ContextParameterReader implements ServletContextListener {
 
 		// 设置ServletContext属性
 		context.setAttribute("AVATAR_DIR", avatars);
+
+		System.out.println("*********End ServletContext Initialize**************");
 	}
 
 }
