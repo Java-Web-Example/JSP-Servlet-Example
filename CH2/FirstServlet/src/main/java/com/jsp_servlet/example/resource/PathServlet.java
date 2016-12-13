@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * @author	Lian
- * @time	2015年12月25日 上午2:36:56
+ * @date	2015年12月25日 上午2:36:56
  * @desc	路径Servlet
  */
 @WebServlet("/servlet/*")

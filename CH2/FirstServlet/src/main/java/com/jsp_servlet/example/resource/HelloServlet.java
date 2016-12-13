@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
  * 继承HttpServlet
  *
  * @author	Lian
- * @time	2016年3月16日
+ * @date	2016年3月16日
  * @since	1.0
  */
 @WebServlet("/hello.view")

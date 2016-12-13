@@ -1,8 +1,10 @@
 package com.jsp_servlet.example.resource.entity;
 
 /**
+ *
+ *
  * @author	Lian
- * @time	2016年1月12日 上午12:52:31
+ * @date	2016年1月12日 上午12:52:31
  * @desc	javabean, 测试jsp:useBean
  */
 public class User {
